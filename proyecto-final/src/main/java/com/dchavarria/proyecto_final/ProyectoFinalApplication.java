@@ -24,12 +24,12 @@ public class ProyectoFinalApplication {
                 Usuario admin = Usuario.builder()
                         .nombre("Administrador Principal")
                         .email("admin@biblioteca.com")
-                        .password(passwordEncoder.encode("admin123"))
+                        .password(passwordEncoder.encode("Admin123*"))
                         .estado(EstadoUsuario.ACTIVO)
                         .rol(Rol.ADMIN)
                         .build();
                 usuarioRepository.save(admin);
-                System.out.println(">>> Usuario ADMIN creado: admin@biblioteca.com / admin123");
+                System.out.println(">>> Usuario ADMIN creado: admin@biblioteca.com / Admin123*");
             }
 
             if (!usuarioRepository.existsByEmail("bibliotecario@biblioteca.com")) {
