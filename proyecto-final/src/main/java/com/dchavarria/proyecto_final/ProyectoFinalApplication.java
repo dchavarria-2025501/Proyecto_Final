@@ -42,17 +42,18 @@ public class ProyectoFinalApplication {
                 System.out.println(">>> Usuario ADMIN creado: admin@biblioteca.com / Admin123*");
             }
 
-            if (!usuarioRepository.existsByEmail("bibliotecario@biblioteca.com")) {
+               /* if (!usuarioRepository.existsByEmail("lector@biblioteca.com")) {
                 Usuario bibliotecario = Usuario.builder()
                         .nombre("Bibliotecario Turno Mañana")
-                        .email("bibliotecario@biblioteca.com")
-                        .password(passwordEncoder.encode("biblio123"))
+                        .email("lector@biblioteca.com")
+                        .password(passwordEncoder.encode("Lector123*"))
                         .estado(EstadoUsuario.ACTIVO)
                         .rol(Rol.BIBLIOTECARIO)
                         .build();
                 usuarioRepository.save(bibliotecario);
-                System.out.println(">>> Usuario BIBLIOTECARIO creado: bibliotecario@biblioteca.com / biblio123");
+                System.out.println(">>> Usuario BIBLIOTECARIO creado: lector@biblioteca.com / Lector123*");
             }
+                */
         };
     }
 }

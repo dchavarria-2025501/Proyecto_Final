@@ -51,7 +51,7 @@ NUEVO_LIBRO_RESP=$(curl -s -X POST "$BASE_URL/libros" \
     "isbn": "978-0134685991",
     "titulo": "Effective Java 3rd Edition",
     "autor": "Joshua Bloch",
-    "categoria": "Programación",
+    "categoria": "Programacion",
     "stockTotal": 10,
     "stockDisponible": 10
   }')
